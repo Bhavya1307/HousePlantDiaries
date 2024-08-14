@@ -1,0 +1,999 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Quicksand:wght@300..700&display=swap');
+
+/* Header styling */
+header {
+    display: flex; /* Flex to style the header */
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #009442;
+}
+
+/* Logo styling */
+#logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+
+/* Blog name styling */
+#heading {
+    flex: 1;
+    font-size: 35px;
+    padding-left: 15px;
+    color: rgb(255, 255, 255);
+    font-family: "Quicksand";
+    font-weight: 400;
+}
+
+/* Nav bar styling */
+.main-navigation {
+    display: flex;
+    gap: 50px;
+}
+
+/* Nav bar elements styling */
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Playfair Display";
+    font-weight: 500;
+}
+
+/* On hover styling on links */
+nav a:hover {
+    color: #004322;
+}
+
+/* leaf animations */
+
+/* Adjusting the position of leaves */
+#leaves {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    text-align: right;
+}
+
+/* Creating leaves */
+#leaves i {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(to bottom right, #309900, #005600);
+    transform: skew(20deg);
+    border-radius: 5% 40% 70%;
+    box-shadow: inset 0px 0px 1px #222;
+    border: 1px solid #333;
+    /* Using "falling" animation */
+    animation: falling 5s 0s infinite;
+}
+
+/* animation for every 2nd leaf */
+#leaves i:nth-of-type(2n) {
+    animation: falling2 5s 0s infinite; /* Using "falling2" animation */
+}
+
+/* animation for every 3nd leaf */
+#leaves i:nth-of-type(3n) {
+    animation: falling3 5s 0s infinite; /* Using "falling3" animation */
+}
+
+#leaves i:before {
+    position: absolute;
+    content: ''; /* Required to display a pseudo-element */
+    top: 117px;
+    right: 9px;
+    height: 27px;
+    width: 32px;
+    transform: rotate(49deg);
+    border-radius: 0% 15% 15% 0%;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    border-left: 0px solid #222;
+    border-right: 1px solid #222;
+    background: linear-gradient(to right, rgba(0, 100, 0, 1), #005600);
+}
+
+#leaves i:after {
+    content: ''; /* Required to display a pseudo-element */
+    height: 125px;
+    width: 10px;
+    background: linear-gradient(to right, rgba(0, 0, 0, .15), rgba(0, 0, 0, 0));
+    display: block;
+    transform: rotate(125deg);
+    position: absolute;
+    left: 85px;
+    border-radius: 50%;
+}
+
+/* Setting different height, width, position and animations for different leaves*/
+#leaves i:nth-of-type(n) {
+    height: 23px;
+    width: 30px;
+}
+
+#leaves i:nth-of-type(n):before {
+    width: 7px;
+    height: 5px;
+    top: 17px;
+    right: 1px;
+}
+
+#leaves i:nth-of-type(n):after {
+    width: 2px;
+    height: 17px;
+    left: 12px;
+    top: 0px;
+}
+
+#leaves i:nth-of-type(2n+1) {
+    height: 11px;
+    width: 16px;
+}
+
+#leaves i:nth-of-type(2n+1):before {
+    width: 4px;
+    height: 3px;
+    top: 7px;
+    right: 0px;
+}
+
+#leaves i:nth-of-type(2n+1):after {
+    width: 2px;
+    height: 6px;
+    left: 5px;
+    top: 1px;
+}
+
+#leaves i:nth-of-type(3n+2) {
+    height: 17px;
+    width: 23px;
+}
+
+#leaves i:nth-of-type(3n+2):before {
+    height: 4px;
+    width: 4px;
+    top: 12px;
+    right: 1px;
+}
+
+#leaves i:nth-of-type(3n+2):after {
+    height: 10px;
+    width: 2px;
+    top: 1px;
+    left: 8px;
+}
+
+#leaves i:nth-of-type(n) {
+    animation-delay: 0.9s;
+}
+
+#leaves i:nth-of-type(2n) {
+    animation-delay: 2.9s;
+}
+
+#leaves i:nth-of-type(3n) {
+    animation-delay: 1.3s;
+}
+
+#leaves i:nth-of-type(4n) {
+    animation-delay: 3.4s;
+}
+
+#leaves i:nth-of-type(5n) {
+    animation-delay: 4s;
+}
+
+#leaves i:nth-of-type(6n) {
+    animation-delay: 2.5s;
+}
+
+#leaves i:nth-of-type(7n) {
+    animation-delay: 1.8s;
+}
+
+#leaves i:nth-of-type(8n) {
+    animation-delay: 0.5s;
+}
+
+#leaves i:nth-of-type(9n) {
+    animation-delay: 2.3s;
+}
+
+#leaves i:nth-of-type(10n) {
+    animation-delay: 1.5s;
+}
+
+#leaves i:nth-of-type(11n) {
+    animation-delay: 0.2s;
+}
+
+#leaves i:nth-of-type(12n) {
+    animation-delay: 3.1s;
+}
+
+#leaves i:nth-of-type(13n) {
+    animation-delay: 0.5s;
+}
+
+#leaves i:nth-of-type(14n) {
+    animation-delay: 3.7s;
+}
+
+#leaves i:nth-of-type(15n) {
+    animation-delay: 2s;
+}
+
+#leaves i:nth-of-type(n) {
+    background: linear-gradient(to bottom right, #309900, #005600);
+}
+
+#leaves i:nth-of-type(2n+2) {
+    background: linear-gradient(to bottom right, #5e9900, #2b5600);
+}
+
+#leaves i:nth-of-type(4n+1) {
+    background: linear-gradient(to bottom right, #990, #564500);
+}
+
+#leaves i:nth-of-type(n) {
+    opacity: .7;
+}
+
+#leaves i:nth-of-type(3n+1) {
+    opacity: .5;
+}
+
+#leaves i:nth-of-type(3n+2) {
+    opacity: .3;
+}
+
+#leaves i:nth-of-type(n) {
+    transform: rotate(180deg); /* To rotate the leaves */
+}
+
+#leaves i:nth-of-type(n) {
+    animation-timing-function: ease-in-out;
+}
+
+/* Blog title styling */
+#mainHeading {
+    font-size: 50px;
+    font-family: "Playfair Display";
+    font-weight: 500;
+    color: #004322;
+    padding-top: 50px;
+    animation: blogTitle 5s;  /* Using "blogtitle" animation */
+}
+
+ /* Main content styling */
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ /* A class to style the subheadings */
+.subheadings {
+    font-family: "Playfair Display";
+    color: #004322;
+}
+
+#p1 {
+    font-family: "Quicksand";
+    font-weight: 500;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#aboutme {
+    font-family: "Quicksand";
+    font-weight: 400;
+    width: 450px;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* A class to style the paragraphs */
+.para {
+    font-family: "Quicksand";
+    font-weight: 400;
+    width: 500px;
+    margin-top: 0;
+}
+
+/* A class to style the big images of the blog */
+.blogImage {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* To make image bigger on hover */
+.blogImage:hover {
+    transform: scale(1.1);
+}
+
+/* Houseplant part styling */
+#houseplants {
+    background-color: #c8e3d4;
+    text-align: center;
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#plants {
+    display: flex;
+    gap: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: start;
+}
+
+/* Plant images styling */
+#plants img {
+    height: 450px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.plantNames {
+    font-family: "Quicksand";
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.plantDetails {
+    width: 300px;
+    padding-top: 15px;
+    display: none; /* Initially setting it to be none */
+}
+
+/* A class to show the info */
+.show {
+    animation: show 3s; /* Using "show" animation */
+    display: block;
+}
+
+.plantDesc {
+    font-family: "Quicksand";
+    font-weight: 400;
+}
+
+/* To make images bigger on hover */
+#plants img:hover {
+    transform: scale(1.1);
+}
+
+/* Positioning main container */
+.wrapper {
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
+/* Positioning and styling the box */
+.box {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 600px;
+    height: 600px;
+    background: none;
+}
+
+/* Styling the pot */
+.pot {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    bottom: 0;
+    left: 40%;
+    background: #FCAA67;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    box-shadow: inset 0 16px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling the top part of the pot */
+.pot-top {
+    position: absolute;
+    width: 22%;
+    height: 5%;
+    bottom: 17%;
+    left: 39%;
+    background: #FCAA67;
+    border-radius: 3px;
+}
+
+/* Styling the stem(trunk) */
+.stem {
+    position: absolute;
+    width: 2%;
+    height: 50%;
+    left: 49%;
+    bottom: 20%;
+    background: #009442;
+}
+
+/* Styling the leaf */
+.leaf {
+    position: absolute;
+    width: 700%;
+    height: 10%;
+    border-radius: 50%;
+    background: #009442;
+    display: none;
+}
+
+/* Styling the lines in the leaf */
+.leaf .line {
+    position: absolute;
+    width: 80%;
+    height: 1%;
+    background: rgba(0, 0, 0, 0.1);
+    top: 48%;
+}
+
+/* animating the leaves */
+.leaf01 {
+    top: 70%;
+    left: 50%;
+    transform: rotate(-25deg); /* To rotate the leaf */
+}
+
+.leaf02 {
+    top: 50%;
+    right: 50%;
+    transform: rotate(205deg);
+}
+
+.leaf03 {
+    top: 30%;
+    left: 50%;
+    transform: rotate(-25deg);
+}
+
+.leaf04 {
+    top: 20%;
+    right: 50%;
+    transform: rotate(205deg);
+}
+
+.leaf05 {
+    top: -17%;
+    left: -120%;
+    transform: rotate(-60deg);
+}
+
+.leaf06 {
+    top: -9%;
+    right: 22%;
+    transform: rotate(195deg);
+}
+
+.stem.rain .leaf {
+    animation: leafGrow 3s; /* Using "leafGrow" animation */
+    display: block;
+}
+
+.stem.rain .leaf05 {
+    animation: topLeafRight 3s; /* Using "topLeafRight" animation */
+}
+
+.stem.rain .leaf06 {
+    animation: topLeafLeft 3s; /* Using "topLeafLeft" animation */
+}
+
+/* Styling drop */
+.drop {
+    position: absolute;
+    top: -150px;
+    left: 270px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 80% 0 55% 50% / 55% 0 80% 50%; /* To create a drop shape */
+    background: #17BEBB;
+    cursor: pointer;
+    transform: rotateZ(-45deg); /* To rotate the drop to z axis */
+    transform-origin: 50% 50% 0; /* Sets the origin of transform */
+}
+
+/* Form styling */
+#formTitle {
+    padding-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border: 2px solid #004322;
+}
+
+/* Styling subscribe button */
+button {
+    height: 40px;
+    width: 210px;
+    background-color: #004322;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83); /* A custom cubic-bezier function for timing */
+    font-size: 15px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button svg {
+    transform: rotate(180deg);
+    transition: all .5s; /* Applies a transition effect to all properties */
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background: #009442;
+    border-radius: 50%;
+    transform: rotate(-180deg);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+/* Position of first flower */
+#position {
+    position: relative;
+    bottom: 230px;
+    left: 370px;
+}
+
+/* Position of second flower */
+#position2 {
+    position: relative;
+    bottom: 260px;
+    left: 1050px;
+}
+
+.sunflower {
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+/* styling head of flower */
+.head {
+    animation: hmove 2s infinite linear; /* Using "hmove" animation */
+    height: 50px;
+    width: 62px;
+    position: relative;
+    left: 8px;
+    top: 39px;
+    transform-origin: 50% -7px;
+    /* origin point of transform */
+}
+
+/* styling head and eyes */
+.head .eye {
+    background: #43699a;
+    border-radius: 10px;
+    height: 5px;
+    position: absolute;
+    top: 30px;
+    width: 5px;
+}
+
+/* styling first eye */
+.head .eye#eye-1 {
+    left: 17px;
+    animation: eye 4s linear infinite normal 0.5s; /* Using "eye" animation */
+}
+
+/* styling second eye */
+.head .eye#eye-2 {
+    right: 17px;
+    animation: eye 4s linear infinite normal 0.5s; /* Using "eye" animation */
+}
+
+/* styling first eye */
+.head .eye#eye-3 {
+    left: 17px;
+    animation: eye 4s linear infinite normal 0.5s; /* Using "eye" animation */
+}
+
+/* styling first eye */
+.head .eye#eye-4 {
+    right: 17px;
+    animation: eye 4s linear infinite normal 0.5s; /* Using "eye" animation */
+}
+
+/* styling head and mouth */
+.head .mouth {
+    background: #ecf0f1;
+    border-radius: 30px;
+    bottom: 2px;
+    clip: rect(8px, 15px, 16px, 0);
+    height: 16px;
+    margin-left: -7.5px;
+    position: absolute;
+    left: 50%;
+    width: 15px;
+}
+
+/* styling petals of the flower */
+.petals {
+    z-index: -1;
+    /* order of an element */
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #faaa18;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation: petals 2s infinite linear; /* Using "petals" animation */
+    box-shadow: 15px 17px #ffe000,
+        -15px 17px #ffe000,
+        -22px -7px #ffe000,
+        0px -22px #ffe000,
+        22px -7px #ffe000;
+}
+
+/* Styling the trunk */
+.trunk {
+    height: 65px;
+    width: 5px;
+    background: #77b039;
+    left: 37px;
+    top: 100px;
+    position: absolute;
+    z-index: -2;
+    /* order of an element */
+    animation: trunk 2s infinite linear; /* Using "trunk" animation */
+}
+
+/* Styling the left branch on the trunk */
+.left-branch {
+    background: #77b039;
+    height: 35px;
+    width: 9px;
+    position: absolute;
+    left: -12px;
+    top: 24px;
+    border-radius: 100% 0% 0% 0%;
+    transform: rotate(-50deg);
+}
+
+/* Styling the right branch on the trunk */
+.right-branch {
+    background: #77b039;
+    height: 35px;
+    width: 9px;
+    position: absolute;
+    top: 24px;
+    left: 10px;
+    border-radius: 0% 100% 0% 0%;
+    transform: rotate(50deg);
+}
+
+/* Styling the vase */
+.vase {
+    position: absolute;
+    top: 165px;
+    left: 13px;
+    height: 0;
+    width: 38px;
+    border-top: 60px solid #faaa18;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.vase:before,
+.vase:after {
+    content: '';
+    position: absolute;
+    background: #faa118;
+}
+
+.vase:before {
+    background: #f9a018;
+    width: 58px;
+    height: 20px;
+    top: -70px;
+    left: -10px;
+    position: absolute;
+    box-shadow: 0 5px 10px -9px black;
+}
+
+#clickme {
+    width: 100%;
+    position: absolute;
+    top: -220px;
+    text-align: center;
+}
+
+/* To show the information on click event on drop */
+#info {
+    width: 100%;
+    position: absolute;
+    top: -70px;
+    text-align: center;
+}
+
+.info {
+    animation: showInfo 2s; /* Using "showInfo" animation */
+}
+
+/* Footer styling */
+footer {
+    background-color: #009442;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+#footerLogo {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+#footernav {
+    padding-top: 15px;
+}
+
+#copyright {
+    color: rgb(255, 255, 255);
+    font-family: "Quicksand";
+    font-weight: 300;
+}
+
+/* Animation properties for falling */
+@keyframes falling {
+
+    0% {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        /* Setting the postion with the use of translate3d */
+        opacity: 100%;
+    }
+
+    100% {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+}
+
+/* Animation properties for falling2 */
+@keyframes falling2 {
+    0% {
+        transform: translate3d(0, 0, 0) rotate(90deg);
+    }
+
+    100% {
+        transform: translate3d(-400px, 680px, 0) rotate(0deg);
+        opacity: 0;
+    }
+}
+
+/* Animation properties for falling3 */
+@keyframes falling3 {
+    0% {
+        transform: translate3d(0, 0, 0) rotate(-20deg);
+    }
+
+    100% {
+        transform: translate3d(-230px, 640px, 0) rotate(-70deg);
+        opacity: 0;
+    }
+}
+
+/* Animation properties for the blog heading */
+@keyframes blogTitle {
+    0% {
+        color: black;
+    }
+
+    30% {
+        letter-spacing: 8px;
+    }
+
+    60% {
+        letter-spacing: 6px;
+        font-weight: bold;
+    }
+}
+
+/* Animation properties for head move */
+@keyframes hmove {
+    0% {
+        left: 5px;
+    }
+
+    25% {
+        left: 15px;
+    }
+
+    50% {
+        left: 5px;
+    }
+
+    75% {
+        left: 15px;
+    }
+
+    100% {
+        left: 5px;
+    }
+}
+
+/* Animation properties for petals */
+@keyframes petals {
+    0% {
+        transform: rotate(0);
+        left: 10px;
+    }
+
+    25% {
+        left: 20px;
+    }
+
+    50% {
+        left: 10px;
+    }
+
+    75% {
+        left: 20px;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        left: 10px;
+    }
+}
+
+/* Animation properties for eyes */
+@keyframes eye {
+    from {}
+
+    79% {
+        height: 5px;
+    }
+
+    80% {
+        height: 0px;
+    }
+
+    85% {
+        height: 5px;
+    }
+
+    to {
+        height: 5px;
+    }
+}
+
+/* Animation properties for trunk */
+@keyframes trunk {
+    0% {
+        left: 34px;
+        transform: rotate(-5deg);
+    }
+
+    25% {
+        left: 40px;
+        transform: rotate(5deg);
+    }
+
+    50% {
+        left: 34px;
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        left: 40px;
+        transform: rotate(5deg);
+    }
+
+    100% {
+        left: 34px;
+        transform: rotate(-5deg);
+    }
+}
+
+/* Animation properties to shpw the info */
+@keyframes showInfo {
+    0% {
+        opacity: 0;
+        top: -30px;
+    }
+
+    100% {
+        opacity: 1;
+        top: -70px
+    }
+}
+
+/* Animation properties for showing the details of plants */
+@keyframes show {
+    0% {
+        opacity: 0;
+        position: relative;
+        top: -100px;
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+}
+
+/* Animation properties of top leaf on the right side */
+@keyframes topLeafRight {
+    0% {
+        top: 5%;
+        width: 0%;
+        height: 0%;
+        left: 10%;
+    }
+
+    100% {
+        width: 700%;
+        height: 10%;
+        top: -17%;
+        left: -120%;
+    }
+}
+
+/* Animation properties of top leaf on the left side */
+@keyframes topLeafLeft {
+    0% {
+        top: 0%;
+        width: 0%;
+        height: 0%;
+    }
+
+    100% {
+        width: 700%;
+        height: 10%;
+        top: -9%;
+    }
+}
+
+/* Animation properties of leaf growing */
+@keyframes leafGrow {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    100% {
+        width: 700%;
+        height: 10%;
+    }
+}
